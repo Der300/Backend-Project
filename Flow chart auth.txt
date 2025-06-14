@@ -1,0 +1,13 @@
+Flow chart auth: 
+		Login.jsx -> AuthContext.jsx -> authService.js -> gọi api.jx de ket noi server
+	- Login:
+		Thu thập dữ liệu;
+		UI.
+	- AuthContext:
+		Quản lý, chia sẽ trạng thái login của app;
+		Lưu token, user info.
+	- authService:
+		Gửi request HTTP tới server và nhận phải hồi (token, user, error);
+		Không chứa state, chỉ thuần là “cầu nối” giao tiếp frontend với backend.
+		
+		
